@@ -1,0 +1,12 @@
+append_text='\nThis is appended file.'  # 为这行文字提前空行 "\n"
+my_file=open('my file.txt','a')   # 'a'=append 以增加内容的形式打开
+my_file.write(append_text)
+my_file.close()
+
+"""
+This is my first test.
+This is the second line.
+This the third line.
+This is appended file.
+"""
+#运行后再去打开文件，会发现会增加一行代码中定义的字符串
